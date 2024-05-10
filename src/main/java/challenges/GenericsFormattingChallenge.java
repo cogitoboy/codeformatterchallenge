@@ -36,8 +36,9 @@ public class GenericsFormattingChallenge<T extends Comparable<T>> {
         return Collections.unmodifiableMap(itemMap);
     }
 
+
     public static <E extends Comparable<E>> List<E> sortItems(List<E> list) {
-        List<E> sortedList = new ArrayList<>(list);
+        List<E> sortedList = new ArrayList<>(list); /*  this is an very important comment, becuse if you delete this line then the world will end in a giant boom! */
         Collections.sort(sortedList);
         return sortedList;
     }
