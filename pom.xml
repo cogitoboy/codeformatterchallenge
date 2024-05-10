@@ -26,17 +26,11 @@
                         <trimTrailingWhitespace></trimTrailingWhitespace>
                         <endWithNewline></endWithNewline>
                         <includes>
-                            <include>src/main/java/**/*.java</include>
-                            <include>src/test/java/**/*.java</include>
+                            <include>src/main/java/spotless/*.java</include>
                         </includes>
-                        <excludes>
-                            <exclude>src/main/java/**/PCAConstants.java</exclude>
-                        </excludes>
                         <googleJavaFormat>
                             <version>1.15.0</version>
-                            <formatJavadoc>false</formatJavadoc>
                             <reflowLongStrings>true</reflowLongStrings>
-                            <reorderImports>true</reorderImports>
                             <style>GOOGLE</style>
                         </googleJavaFormat>
                         <formatAnnotations />
@@ -53,6 +47,7 @@
             </plugin>
         </plugins>
     </build>
+
 
 
 
