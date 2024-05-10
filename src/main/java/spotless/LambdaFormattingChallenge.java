@@ -6,32 +6,15 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-
-
-/** This class demonstrates various edge cases and challenging formatting scenarios.
+/**
+ * This class demonstrates various edge cases and challenging formatting scenarios.
  *
- *                    <java>
- *                         <trimTrailingWhitespace></trimTrailingWhitespace>
- *                         <endWithNewline></endWithNewline>
- *                         <includes>
- *                             <include>src/main/java/spotless/*.java</include>
- *                         </includes>
- *                         <googleJavaFormat>
- *                             <version>1.15.0</version>
- *                             <reflowLongStrings>true</reflowLongStrings>
- *                             <style>GOOGLE</style>
- *                         </googleJavaFormat>
- *                         <formatAnnotations />
- *                         <indent>
- *                             <tabs>true</tabs>
- *                             <spacesPerTab>2</spacesPerTab>
- *                         </indent>
- *                         <indent>
- *                             <spaces>true</spaces>
- *                             <spacesPerTab>4</spacesPerTab>
- *                         </indent>
- *                     </java>
- *
+ * <p><java> <trimTrailingWhitespace></trimTrailingWhitespace> <endWithNewline></endWithNewline>
+ * <includes> <include>src/main/java/spotless/*.java</include> </includes> <googleJavaFormat>
+ * <version>1.15.0</version> <reflowLongStrings>true</reflowLongStrings> <style>GOOGLE</style>
+ * </googleJavaFormat> <formatAnnotations /> <indent> <tabs>true</tabs>
+ * <spacesPerTab>2</spacesPerTab> </indent> <indent> <spaces>true</spaces>
+ * <spacesPerTab>4</spacesPerTab> </indent> </java>
  */
 public class LambdaFormattingChallenge {
     public static void main(String[] args) {

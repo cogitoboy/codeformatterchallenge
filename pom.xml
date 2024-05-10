@@ -18,7 +18,7 @@
     <build>
         <plugins>
             <!-- PRETTIER-JAVA  mvn prettier:write-->
-            <plugin>
+            <!--plugin>
                 <groupId>com.hubspot.maven.plugins</groupId>
                 <artifactId>prettier-maven-plugin</artifactId>
                 <version>0.22</version>
@@ -37,8 +37,8 @@
                     </inputGlobs>
                 </configuration>
 
-            </plugin>
-            <!-- PLANATIR -->
+            </plugin-->
+            <!-- PLANATIR  mvn spotless:apply    -->
             <!--plugin>
                 <groupId>com.diffplug.spotless</groupId>
                 <artifactId>spotless-maven-plugin</artifactId>
@@ -67,7 +67,7 @@
                     </java>
                 </configuration>
             </plugin-->
-            <!-- SPOTLESS
+            <!-- SPOTLESS mvn spotless:apply    -->
             <plugin>
                 <groupId>com.diffplug.spotless</groupId>
                 <artifactId>spotless-maven-plugin</artifactId>
@@ -95,7 +95,7 @@
                         </indent>
                     </java>
                 </configuration>
-            </plugin-->
+            </plugin>
         </plugins>
     </build>
 
