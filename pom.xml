@@ -39,7 +39,7 @@
 
             </plugin-->
             <!-- PLANATIR  mvn spotless:apply    -->
-            <plugin>
+            <!--plugin>
                 <groupId>com.diffplug.spotless</groupId>
                 <artifactId>spotless-maven-plugin</artifactId>
                 <version>2.43.0</version>
@@ -54,6 +54,42 @@
                             <style>PALANTIR</style>
 
                         </palantirJavaFormat>
+
+                    </java>
+                </configuration>
+            </plugin-->
+            <plugin>
+                <groupId>com.diffplug.spotless</groupId>
+                <artifactId>spotless-maven-plugin</artifactId>
+                <version>2.43.0</version>
+                <configuration>
+                    <java>
+                        <includes>
+                            <include>src/main/java/planatir/*.java</include>
+                            <include>src/test/java/planatir/*.java</include>
+                        </includes>
+                        <excludes>
+                            <exclude>src/main/java/**/PCAConstants.java</exclude>
+                        </excludes>
+                        <palantirJavaFormat>
+                            <version>2.39.0</version>
+                            <style>PALANTIR</style>
+
+                        </palantirJavaFormat>
+                        <formatAnnotations />
+
+                    </java>
+                    <pom>
+                        <includes>
+                            <include>pom.xml</include>
+                        </includes>
+                        <sortPom>
+                            <sortDependencies></sortDependencies>
+                            <sortDependencyManagement></sortDependencyManagement>
+                            <sortPlugins></sortPlugins>
+                            <sortProperties></sortProperties>
+                            <keepBlankLines>false</keepBlankLines>
+                        </sortPom>
                         <indent>
                             <tabs>true</tabs>
                             <spacesPerTab>2</spacesPerTab>
@@ -62,7 +98,27 @@
                             <spaces>true</spaces>
                             <spacesPerTab>4</spacesPerTab>
                         </indent>
-                    </java>
+                    </pom>
+                    <yaml>
+                        <includes>
+                            <include>src/**/*.yml</include>
+                        </includes>
+                        <jackson>
+                            <version>${version.spotless-yaml-jackson}</version>
+                            <features>
+                                <INDENT_OUTPUT>true</INDENT_OUTPUT>
+                                <ORDER_MAP_ENTRIES_BY_KEYS>true</ORDER_MAP_ENTRIES_BY_KEYS>
+                            </features>
+                            <yamlFeatures>
+                                <WRITE_DOC_START_MARKER>true</WRITE_DOC_START_MARKER>
+                                <MINIMIZE_QUOTES>true</MINIMIZE_QUOTES>
+                                <INDENT_ARRAYS>true</INDENT_ARRAYS>
+                                <INDENT_ARRAYS_WITH_INDICATOR>true</INDENT_ARRAYS_WITH_INDICATOR>
+                                <ALWAYS_QUOTE_NUMBERS_AS_STRINGS>false</ALWAYS_QUOTE_NUMBERS_AS_STRINGS>
+                                <SPLIT_LINES>false</SPLIT_LINES>
+                            </yamlFeatures>
+                        </jackson>
+                    </yaml>
                 </configuration>
             </plugin>
             <!-- SPOTLESS mvn spotless:apply    -->
