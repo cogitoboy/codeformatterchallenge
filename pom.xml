@@ -23,15 +23,31 @@
                 <version>2.34.0</version>
                 <configuration>
                     <java>
+                        <trimTrailingWhitespace></trimTrailingWhitespace>
+                        <endWithNewline></endWithNewline>
+                        <includes>
+                            <include>src/main/java/**/*.java</include>
+                            <include>src/test/java/**/*.java</include>
+                        </includes>
+                        <excludes>
+                            <exclude>src/main/java/**/PCAConstants.java</exclude>
+                        </excludes>
                         <googleJavaFormat>
                             <version>1.15.0</version>
+                            <formatJavadoc>false</formatJavadoc>
+                            <reflowLongStrings>true</reflowLongStrings>
+                            <reorderImports>true</reorderImports>
                             <style>GOOGLE</style>
                         </googleJavaFormat>
-                        <removeUnusedImports />
-                        <importOrder>
-                            <order>java,javax,org,com</order>
-                        </importOrder>
                         <formatAnnotations />
+                        <indent>
+                            <tabs>true</tabs>
+                            <spacesPerTab>2</spacesPerTab>
+                        </indent>
+                        <indent>
+                            <spaces>true</spaces>
+                            <spacesPerTab>4</spacesPerTab>
+                        </indent>
                     </java>
                 </configuration>
             </plugin>
