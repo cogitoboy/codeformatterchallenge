@@ -29,6 +29,7 @@ package planatir;
  *
  */
 public class LongLinesFomattingChallenge {
+
     public static void main(String[] args) {
         String reallyLongString =
                 "This is a really long string that goes on and on and on and on and on and on and on and on and on and"
@@ -49,7 +50,7 @@ public class LongLinesFomattingChallenge {
                         + " on and on and on and on and on and on and on and on and on and on and on and on and on and on"
                         + " and on and on and on and on and on and on and on and on and on and on and on and on and on and"
                         + " on and on and on and on and on and on and on and on and on and on and on and on and on and on"
-                        + " and on and on and on and on";
+                        + " and on and on and on and   sdfsd  on";
 
         String anotherLongString =
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a bibendum bibendum, augue"
