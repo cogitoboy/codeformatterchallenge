@@ -29,7 +29,7 @@ import java.util.*;
  *                         </indent>
  *                     </java>
  *
- * */
+ */
 public class GenericsFormattingChallenge<T extends Comparable<T>> {
     private List<T> items;
     private Map<String, List<T>> itemMap;

@@ -6,6 +6,35 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+
+/**
+ * This class demonstrates various edge cases and challenging formatting scenarios.
+ *
+ *
+ *                      <java>
+ *                         <trimTrailingWhitespace/>
+ *                         <endWithNewline/>
+ *                         <includes>
+ *                             <include>src/main/java/planatir/*.java</include>
+ *                         </includes>
+ *                         <palantirJavaFormat>
+ *                             <version>2.39.0</version>                     <!-- optional -->
+ *                             <style>PALANTIR</style>                       <!-- or AOSP/GOOGLE (optional) -->
+ *                             <!--formatJavadoc>false</formatJavadoc--      <!-- defaults to false (optional, requires at least Palantir 2.39.0) -->
+ *                         </palantirJavaFormat>
+ *                         <formatAnnotations />
+ *                         <indent>
+ *                             <tabs>true</tabs>
+ *                             <spacesPerTab>2</spacesPerTab>
+ *                         </indent>
+ *                         <indent>
+ *                             <spaces>true</spaces>
+ *                             <spacesPerTab>4</spacesPerTab>
+ *                         </indent>
+ *                     </java>
+ *
+ *
+ */
 public class LambdaFormattingChallenge {
         public static void main(String[] args) {
                 // Simple lambda expression

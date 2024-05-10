@@ -31,17 +31,6 @@ import java.util.*;
  *                     </java>
  *
  *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
  */
 public class GenericsFormattingChallenge<T extends Comparable<T>> {
         private List<T> items;
