@@ -45,8 +45,7 @@
                 <version>2.43.0</version>
                 <configuration>
                     <java>
-                        <trimTrailingWhitespace/>
-                        <endWithNewline/>
+
                         <includes>
                             <include>src/main/java/planatir/*.java</include>
                         </includes>
@@ -55,15 +54,7 @@
                             <style>PALANTIR</style>
 
                         </palantirJavaFormat>
-                        <formatAnnotations />
-                        <indent>
-                            <tabs>true</tabs>
-                            <spacesPerTab>2</spacesPerTab>
-                        </indent>
-                        <indent>
-                            <spaces>true</spaces>
-                            <spacesPerTab>4</spacesPerTab>
-                        </indent>
+
                     </java>
                 </configuration>
             </plugin>
