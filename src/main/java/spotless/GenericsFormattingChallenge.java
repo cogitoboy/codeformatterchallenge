@@ -2,9 +2,34 @@ package spotless;
 
 import static java.lang.Math.*;
 
+
 import java.util.*;
 
-/** This class demonstrates various edge cases and challenging formatting scenarios. */
+/** This class demonstrates various edge cases and challenging formatting scenarios.
+ *
+ *                    <java>
+ *                         <trimTrailingWhitespace></trimTrailingWhitespace>
+ *                         <endWithNewline></endWithNewline>
+ *                         <includes>
+ *                             <include>src/main/java/spotless/*.java</include>
+ *                         </includes>
+ *                         <googleJavaFormat>
+ *                             <version>1.15.0</version>
+ *                             <reflowLongStrings>true</reflowLongStrings>
+ *                             <style>GOOGLE</style>
+ *                         </googleJavaFormat>
+ *                         <formatAnnotations />
+ *                         <indent>
+ *                             <tabs>true</tabs>
+ *                             <spacesPerTab>2</spacesPerTab>
+ *                         </indent>
+ *                         <indent>
+ *                             <spaces>true</spaces>
+ *                             <spacesPerTab>4</spacesPerTab>
+ *                         </indent>
+ *                     </java>
+ *
+ * */
 public class GenericsFormattingChallenge<T extends Comparable<T>> {
     private List<T> items;
     private Map<String, List<T>> itemMap;
