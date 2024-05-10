@@ -1,6 +1,5 @@
 package planatir;
 
-
 /**
  * This class demonstrates various edge cases and challenging formatting scenarios.
  *
