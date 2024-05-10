@@ -30,7 +30,7 @@ public class LambdaFormattingChallenge {
         int result = doubleAndSquare.apply(5);  System.out.println("Result: " + result);
 
         // Lambda with nested lambdas
-        Function<String, Function<String, String>> concatFunction = str1 -> str2 -> str1 + " " + str2;
+        Function<String, Function<String, String>> concatFunction = str1 -> str2 -> str1 + " " + str2 + " adding something that is very logn for no reason";
                    String concatenated = concatFunction.apply("Hello").apply("Lambda");
         System.out.println("Concatenated: " + concatenated);
 
